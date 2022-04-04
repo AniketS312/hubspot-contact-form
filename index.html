@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Booking Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <div class="logo"><img src="./assets/Symbol-18.png" alt="Placeholder logo"></div>
+    <section class="timeframe-section">
+        <h1>How soon do you need a designer?</h1>
+        <button class="active">Immediately</button>
+        <button>In 1-2 weeks</button>
+        <button>2+ weeks</button>
+    </section>
+    <section class="call-section">
+        <p>When should we call you?</p>
+        <form id="form">
+            <div class="checkbox-container">
+                <div class="checkbox">
+                    <input type="radio" name="time" value="now" id="checkbox-item">
+                    <label for="now">Now</label>
+                </div>
+                <div class="checkbox">
+                    <input type="radio" name="time" value="later" id="checkbox-item">
+                    <label for="later">Later</label>
+                </div>
+            </div>
+            <select name="day" id="day">
+                <option class="option">Option One</option>
+                <option class="option">Option Two</option>
+                <option class="option">Option Three</option>
+            </select>
+            <select name="time" id="time"></select>
+        </form>
+    </section>
+</body>
+</html>
